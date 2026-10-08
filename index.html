@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <main class="Earthplanet">
-  <section class="hero-card">
-    <section class="planet-info">
-      <figure>
-        <img src="img/image 26.jpg" class="earth" alt="planet EArth">
-    </figure>
-    
-    <div>
-    <h1>Earth</h1>
-    <p>Terrestial</p>
-  
-    <p>The only known planet to support life, with liquid water on its surface. </p>
-    </div>
-    
-    </section>
-    <section class="planet-stats">
-      <table>
-        <tr>
-        <th>Gravity</th>
-        <th>Mass</th>
-        <th>Period</th>
-        </tr>
-        <tr>
-          <td>9.8</td>
-          <td>0.00315</td>
-          <td>365</td>
-        </tr>
-      </table>
-    </section>
-    <section class="planet-details">
-      <div>
-        <img src="img/Temperature.png" alt="">
-      </div>
-      <div><img src="img/Half moon.png" alt=""></div>
-      <div><img src="img/Diameter info.png" alt=""></div>
-      <div><img src="img/Company.png" alt=""></div>
-    </section>
-  </section>
-  </main>
+    <header class="header">
+        <div class="logo">
+            <img src="svg/logo_black.svg" alt="Planet logo">
+
+        </div>
+
+        <button class="theme-toggle">
+            <span id="theme-text">DARK</span>
+            <i class="fa-solid fa-moon"></i>
+            <img src="svg/Path.svg" alt="moon logo">
+        </button>
+
+    </header>
+
+    <nav class="planet-nav">
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text" id="search" name="search" placeholder="search planet name">
+            <button>Search</button>
+
+        </div>
+    </nav>
+
+    <main class="Earthplanet">
+        <section class="hero-card">
+            <section class="planet-info">
+                <figure>
+                    <img src="img/image 26.jpg" class="earth" alt="planet Earth">
+                </figure>
+
+                <div>
+                    <h1>Earth</h1>
+                    <p>Terrestrial</p>
+
+                    <p>The only known planet to support life, with liquid water on its surface.</p>
+                </div>
+
+            </section>
+            <section class="planet-stats">
+                <table>
+                    <tr>
+                        <th>Gravity</th>
+                        <th>Mass</th>
+                        <th>Period</th>
+                    </tr>
+                    <tr>
+                        <td>9.8</td>
+                        <td>0.00315</td>
+                        <td>365</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="planet-details">
+                <div>
+                    <img src="img/Temperature.png" alt="">
+                </div>
+                <div><img src="img/Half moon.png" alt=""></div>
+                <div><img src="img/Diameter info.png" alt=""></div>
+                <div><img src="img/Company.png" alt=""></div>
+            </section>
+        </section>
+    </main>
+
+    <script src="header.js"></script>
 </body>
 </html>
