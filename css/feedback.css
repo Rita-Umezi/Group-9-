@@ -1,0 +1,61 @@
+[hidden] {
+  display: none !important;
+}
+.error-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: center;
+}
+.error-card h2 {
+  margin: 0;
+  font-size: 16px;
+}
+.error-card p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #5b7bb5;
+}
+body.dark .error-card {
+  background: #0c2a55;
+  color: #ffffff;
+  box-shadow: none;
+}
+body.dark .error-card p {
+  color: #8fb0e8;
+}
+.hero-card.is-loading {
+  opacity: 0.6;
+  animation: feedback-pulse 1.2s ease-in-out infinite;
+}
+@keyframes feedback-pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-card.is-loading {
+    animation: none;
+  }
+}
+.retry-btn {
+  margin-top: 16px;
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 4px;
+  background: #3b82f6;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+.retry-btn:hover {
+  background: #1ab4ff;
+}
+.retry-btn:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
