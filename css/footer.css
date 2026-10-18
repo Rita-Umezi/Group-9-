@@ -51,6 +51,23 @@
   margin: 0;
 }
 
+body.dark .site-footer {
+  width: min(100% - 32px, 384px);
+  color: #9bb0d3;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+body.dark .footer-about h2 {
+  margin-bottom: 10px;
+  color: #cad6e9;
+  font-size: 11px;
+}
+
+body.dark .footer-about li {
+  margin-bottom: 4px;
+}
+
 @media (max-width: 560px) {
   .site-footer {
     width: min(100% - 28px, 614px);
@@ -59,5 +76,9 @@
   .site-footer-inner {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  body.dark .site-footer {
+    width: calc(100% - 32px);
   }
 }
