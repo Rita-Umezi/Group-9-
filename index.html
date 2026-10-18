@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/table.css">
 </head>
 <body>
     <header class="header">
@@ -76,6 +77,82 @@
             </section>
         </section>
     </main>
+
+    <section class="planet-facts" aria-labelledby="planet-facts-title">
+        <h2 id="planet-facts-title">Planetary Facts at a Glance</h2>
+        <p class="planet-facts-intro">Below is a comparative table of major planets in our solar system. The data highlights key physical properties used by astronomers and researchers worldwide.</p>
+
+        <table class="planet-facts-table">
+            <caption>Data about the planets of our solar system (Planetary facts taken from NASA)</caption>
+            <colgroup>
+                <col style="width: 18%">
+                <col style="width: 17%">
+                <col style="width: 21.5%">
+                <col style="width: 21.75%">
+                <col style="width: 21.75%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="category-heading" colspan="2" scope="colgroup"></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                    <th scope="col">Diameter (km)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="planet-group terrestrial" colspan="2" rowspan="4" scope="rowgroup">Terrestrial<br>Planets</th>
+                    <td>Mercury</td>
+                    <td>0.330</td>
+                    <td>4,878</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>0.330</td>
+                    <td>4,878</td>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>0.330</td>
+                    <td>4,878</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>0.330</td>
+                    <td>4,878</td>
+                </tr>
+                <tr>
+                    <th class="planet-group jovian" rowspan="4" scope="rowgroup">Jovian<br>Planets</th>
+                    <th class="planet-subgroup" rowspan="2" scope="rowgroup">Gas Giants</th>
+                    <td>Jupiter</td>
+                    <td>0.330</td>
+                    <td>4,878</td>
+                </tr>
+                <tr>
+                    <td>Saturn</td>
+                    <td>0.330</td>
+                    <td>4,878</td>
+                </tr>
+                <tr>
+                    <th class="planet-subgroup" rowspan="2" scope="rowgroup">Ice Giants</th>
+                    <td>Uranus</td>
+                    <td>0.330</td>
+                    <td>4,878</td>
+                </tr>
+                <tr>
+                    <td>Neptune</td>
+                    <td>0.330</td>
+                    <td>4,878</td>
+                </tr>
+                <tr>
+                    <th class="planet-group dwarf" colspan="2" scope="row">Dwarf Planets</th>
+                    <td>Pluto</td>
+                    <td>0.330</td>
+                    <td>4,878</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
     <script src="header.js"></script>
     <script src="js/nav.js"></script>
