@@ -11,9 +11,6 @@
 | Oluwatimilehin Anthony Odusami | [Timmy-434](https://github.com/Timmy-434) |
 | Moyosoreoluwa Akinsulere | [Kasumi-chan18](https://github.com/Kasumi-chan18) |
 | Iniobong Imeobong Okposin | [Iniobongokposin39](https://github.com/Iniobongokposin39) |
-| Name (still needed) | [username](https://github.com/username) |
-| Name (still needed) | [username](https://github.com/username) |
-| Name (still needed) | [username](https://github.com/username) |
 
 ## Components and Contributors
 | Component / Function | File(s) | Built by |
