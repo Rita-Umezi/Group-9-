@@ -52,16 +52,16 @@
 }
 
 body.dark .site-footer {
-  width: min(100% - 32px, 384px);
+  width: min(100% - 32px, 614px);
   color: #9bb0d3;
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1.5;
 }
 
 body.dark .footer-about h2 {
   margin-bottom: 10px;
   color: #cad6e9;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 body.dark .footer-about li {
@@ -79,6 +79,6 @@ body.dark .footer-about li {
   }
 
   body.dark .site-footer {
-    width: calc(100% - 32px);
+    width: calc(100% - 16px);
   }
 }

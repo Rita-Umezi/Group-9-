@@ -62,7 +62,7 @@
 }
 
 body.dark .planet-facts {
-  width: min(100% - 32px, 384px);
+  width: min(100% - 32px, 614px);
   margin: 16px auto 22px;
   color: #f1f5fc;
 }
@@ -70,13 +70,13 @@ body.dark .planet-facts {
 body.dark .planet-facts h2 {
   margin-bottom: 5px;
   color: #f5f7fc;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.3;
 }
 
 body.dark .planet-facts-intro {
   color: #91a6cb;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.5;
 }
 
@@ -85,13 +85,13 @@ body.dark .planet-facts-table {
   border-color: #eaf0fb;
   border-radius: 10px;
   color: #101827;
-  font-size: 8px;
+  font-size: 9px;
 }
 
 body.dark .planet-facts-table caption {
   padding-bottom: 8px;
   color: #e6edf9;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 body.dark .planet-facts-table th,
@@ -105,7 +105,7 @@ body.dark .planet-facts-table thead th {
   height: 33px;
   background: #141f34;
   color: #eef3fc;
-  font-size: 8px;
+  font-size: 9px;
 }
 
 body.dark .planet-facts-table .planet-group,
@@ -162,6 +162,6 @@ body.dark .planet-facts-table tbody td {
   }
 
   body.dark .planet-facts {
-    width: calc(100% - 32px);
+    width: calc(100% - 16px);
   }
 }

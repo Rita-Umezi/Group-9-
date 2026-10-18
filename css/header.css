@@ -105,7 +105,7 @@ span {
 
 body.dark .header {
     box-sizing: border-box;
-    width: min(100% - 32px, 384px);
+    width: min(100% - 32px, 614px);
     margin: 0 auto;
     padding: 8px 0 0;
 }
@@ -120,7 +120,7 @@ body.dark .theme-toggle {
 
 body.dark .theme-toggle span {
     color: #b7c8e9;
-    font-size: 7px;
+    font-size: 8px;
 }
 
 body.dark .theme-toggle img {
@@ -139,13 +139,13 @@ body.dark .theme-toggle::after {
 
 body.dark .planet-nav {
     box-sizing: border-box;
-    width: min(100% - 32px, 384px);
+    width: min(100% - 32px, 614px);
     margin: 12px auto 20px;
     padding: 0;
 }
 
 body.dark .search-box {
-    height: 36px;
+    height: 48px;
     background: #202e4b;
     border-radius: 8px;
 }
@@ -160,18 +160,18 @@ body.dark .search-box input {
     padding: 0;
     background: transparent;
     color: #f8fafc;
-    font: 10px "Space Mono", monospace;
+    font: 11px "Space Mono", monospace;
 }
 
 body.dark .search-box input::placeholder {
     color: #a5b1c7;
-    font-size: 9px;
+    font-size: 10px;
 }
 
 body.dark .search-box button {
-    height: 26px;
+    height: 32px;
     margin-right: 6px;
     padding: 0 13px;
     border-radius: 6px;
-    font: 700 8px Arial, sans-serif;
+    font: 700 9px "Space Mono", monospace;
 }

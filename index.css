@@ -76,7 +76,7 @@ body.dark {
 
 body.dark .hero-card {
   box-sizing: border-box;
-  width: min(100% - 32px, 384px);
+  width: min(100% - 32px, 614px);
   max-width: none;
   margin: 0 auto 16px;
   padding: 24px;
@@ -104,18 +104,18 @@ body.dark .earth {
 body.dark .planet-info h1 {
   margin-bottom: 0;
   color: #f8fafc;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 body.dark .planet-info p:first-of-type {
   margin: 0 0 11px;
   color: #1684ff;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 body.dark .planet-info p:last-of-type {
   color: #4b6a9b;
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1.55;
 }
 
@@ -129,12 +129,12 @@ body.dark .planet-stats {
 
 body.dark .planet-stats th {
   color: #c5d0e3;
-  font: 7px "Space Mono", monospace;
+  font: 8px "Space Mono", monospace;
 }
 
 body.dark .planet-stats td {
   color: #f8fafc;
-  font: 700 11px "Space Mono", monospace;
+  font: 700 12px "Space Mono", monospace;
 }
 
 body.dark .planet-details {
@@ -148,13 +148,14 @@ body.dark .planet-details > div {
 
 body.dark .planet-details img {
   display: block;
-  width: 100%;
+  width: 150px;
+  max-width: 100%;
   height: auto;
   filter: brightness(0) invert(1);
 }
 
 @media (max-width: 420px) {
   body.dark .hero-card {
-    width: calc(100% - 32px);
+    width: calc(100% - 16px);
   }
 }
