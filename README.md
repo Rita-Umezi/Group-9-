@@ -2,7 +2,7 @@
 ## Team Members
 | Name | GitHub |
 |------|--------|
-| Rita Umezinwa (Team Lead) | [Rita-Umezi](https://github.com/Rita-Umezi) |
+| Rita Umezinwa Chisom(Team Lead) | [Rita-Umezi](https://github.com/Rita-Umezi) |
 | Nkereuwem Henry Abia (Assistant Team Lead) | [nkereuwemhenry-eng](https://github.com/nkereuwemhenry-eng) |
 | Ogunleye Babajide Peter | [Blackflames121](https://github.com/Blackflames121) |
 | Asagba Ayoade Victor | [ayoadethegarth-collab](https://github.com/ayoadethegarth-collab) |
@@ -11,26 +11,23 @@
 | Oluwatimilehin Anthony Odusami | [Timmy-434](https://github.com/Timmy-434) |
 | Moyosoreoluwa Akinsulere | [Kasumi-chan18](https://github.com/Kasumi-chan18) |
 | Iniobong Imeobong Okposin | [Iniobongokposin39](https://github.com/Iniobongokposin39) |
-| Name (still needed) | [username](https://github.com/username) |
-| Name (still needed) | [username](https://github.com/username) |
-| Name (still needed) | [username](https://github.com/username) |
 
 ## Components and Contributors
 | Component / Function | File(s) | Built by |
 |----------------------|---------|----------|
-| Repo setup, scaffold, README, deployment | `README.md` | Rita Umezinwa |
-| Merging pull requests | GitHub pull requests | Oloruntayo Philip |
-| Fetch API layer | `js/api.js` | Henry Abia |
+| Repo setup, scaffold, README, deployment | `README.md` | Umezinwa Rita Chisom |
+| Merging pull requests | GitHub pull requests | Oloruntayo Aanuoluwapo Philip |
+| Fetch API layer | `js/api.js` | Nkereuwem Henry Abia |
 | Theme system (light/dark) | `css/tokens.css`, `js/theme.js` | Alade28 |
-| Header and planet navigation | `css/header.css` | Asagba Victor |
-| Planet hero | `css/hero.css` | Ogunleye Peter |
+| Header and planet navigation | `css/header.css` | Asagba Ayoade Victor |
+| Planet hero | `css/hero.css` | Ogunleye Babajide Peter |
 | Planet stats | `css/stats.css` | Moyosoreoluwa Akinsurulere |
 | Data rendering | `js/render.js` | Jimoh Ayoola |
 | Footer: about section and links | `css/footer.css` | Oluwatimilehin Anthony |
 | Planet switching, loading/error states | `js/nav.js`, `css/feedback.css` | Iniobong Okposin |
 | Responsive design and mobile view | `css/responsive.css` | Smile-tonia |
-| Interactive states and accessibility | `css/states.css` | Name |
-| QA, light/dark audit, and polish | issues and fix PRs | Name |
+| Interactive states and accessibility | `css/states.css` | Umezinwa Rita |
+| QA, light/dark audit, and polish | issues and fix PRs | Umezinwa Rita |
 
 ## Run Locally
 1. Clone the repo:
@@ -43,4 +40,4 @@
 No installation or build step is needed.
 
 ## Live Demo
-[Add deployment link here]
+https://group9-virid.vercel.app/
