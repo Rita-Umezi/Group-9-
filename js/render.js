@@ -1,134 +1,51 @@
-// Display the selected planet's information.
 function renderPlanet(planet) {
-    if (!planet) {
-        showSearchMessage("Planet data not found.");
-        return;
-    }
+  if (!planet) return;
 
-    const planetImage = document.querySelector(".planet-info img");
-    const planetName = document.querySelector(".planet-info h1");
-    const planetParagraphs = document.querySelectorAll(".planet-info div p");
+  const card = document.querySelector(".hero-card");
+  const image = document.querySelector(".planet-info img");
+  const name = document.querySelector(".planet-info h1");
+  const description = document.querySelector(".planet-info p:last-of-type");
+  const type = document.querySelector(".planet-info p:first-of-type");
+  const stats = document.querySelectorAll(".planet-stats td");
 
-    // Update the planet image.
-    if (planetImage) {
-        planetImage.src = planet.image;
-        planetImage.alt = `Planet ${planet.name}`;
-    }
+  if (!card || !image || !name || !type || !description || stats.length < 3) return;
 
-    // Update the planet name, type, and description.
-    if (planetName) {
-        planetName.textContent = planet.name;
-    }
+  name.textContent = planet.name;
+  type.textContent = planet.type;
+  description.textContent = planet.description;
+  image.src = planet.image;
+  image.alt = `Planet ${planet.name}`;
+  image.hidden = false;
+  image.onerror = () => {
+    image.onerror = null;
+    image.hidden = true;
+  };
 
-    if (planetParagraphs.length >= 2) {
-        planetParagraphs[0].textContent = planet.type;
-        planetParagraphs[1].textContent = planet.description;
-    }
+  stats[0].textContent = `${planet.gravity} m/s²`;
+  stats[1].textContent = planet.mass;
+  stats[2].textContent = `${planet.period} days`;
 
-    // Update gravity, mass, and orbital period.
-    const statCells = document.querySelectorAll(
-        ".planet-stats table tr:nth-child(2) td"
-    );
+  const detailValues = {
+    temperature: `${planet.temperature} K`,
+    moons: planet.moons,
+    diameter: `${Number(planet.diameter).toLocaleString()} km`,
+    distance: `${planet.distanceFromSun.toLocaleString()} million km`
+  };
 
-    if (statCells.length >= 3) {
-        statCells[0].textContent = `${planet.gravity} m/s²`;
-        statCells[1].textContent = planet.mass;
-        statCells[2].textContent = `${planet.period} days`;
-    }
+  document.querySelectorAll(".planet-detail[data-detail]").forEach((detail) => {
+    const value = detailValues[detail.dataset.detail];
+    const valueElement = detail.querySelector(".planet-detail-value");
+    if (valueElement && value !== undefined) valueElement.textContent = value;
+  });
 
-    // Keep the existing images and display their information visibly.
-    const detailCards = document.querySelectorAll(".planet-details > div");
-
-    const details = [
-        { label: "Temperature", value: `${planet.temperature} K` },
-        { label: "Moons", value: planet.moons },
-        { label: "Diameter", value: `${planet.diameter} km` },
-        {
-            label: "Distance from Sun",
-            value: `${planet.distanceFromSun} million km`
-        }
-    ];
-
-    detailCards.forEach((card, index) => {
-        const detail = details[index];
-
-        if (!detail) return;
-
-        let label = card.querySelector(".planet-detail-label");
-        let value = card.querySelector(".planet-detail-value");
-
-        if (!label) {
-            label = document.createElement("p");
-            label.className = "planet-detail-label";
-            card.appendChild(label);
-        }
-
-        if (!value) {
-            value = document.createElement("p");
-            value.className = "planet-detail-value";
-            card.appendChild(value);
-        }
-
-        label.textContent = detail.label;
-        value.textContent = detail.value;
-
-        const image = card.querySelector("img");
-
-        if (image) {
-            image.alt = detail.label;
-            image.title = `${detail.label}: ${detail.value}`;
-        }
-    });
-
-    showSearchMessage("");
+  card.hidden = false;
+  card.classList.remove("is-loading");
 }
 
-// Display search feedback.
-function showSearchMessage(message) {
-    const searchBox = document.querySelector(".search-box");
+function showSearchMessage(message, isError = false) {
+  const messageElement = document.querySelector("#planet-search-message");
+  if (!messageElement) return;
 
-    if (!searchBox) return;
-
-    let messageElement = document.querySelector("#planet-search-message");
-
-    if (!messageElement) {
-        messageElement = document.createElement("p");
-        messageElement.id = "planet-search-message";
-        messageElement.setAttribute("role", "status");
-        searchBox.insertAdjacentElement("afterend", messageElement);
-    }
-
-    messageElement.textContent = message;
-}
-
-// Find a planet by name and display it.
-function searchPlanet(name) {
-    const planet = getPlanetByName(name.trim());
-
-    if (!planet) {
-        showSearchMessage(
-            "Planet not found. Please check the name and try again."
-        );
-        return;
-    }
-
-    renderPlanet(planet);
-}
-
-// Connect the search box to the planet data.
-const searchInput = document.querySelector("#search");
-const searchButton = document.querySelector(".search-box button");
-
-if (searchInput && searchButton) {
-    searchButton.addEventListener("click", () => {
-        if (searchInput.value.trim()) {
-            searchPlanet(searchInput.value);
-        }
-    });
-
-    searchInput.addEventListener("keydown", (event) => {
-        if (event.key === "Enter" && searchInput.value.trim()) {
-            searchPlanet(searchInput.value);
-        }
-    });
+  messageElement.textContent = message;
+  messageElement.classList.toggle("is-error", isError);
 }

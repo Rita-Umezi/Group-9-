@@ -10,7 +10,7 @@ body {
 }
 
 body.dark {
-    background-color: #1e1e1e;
+    background-color: #141f34;
     color: var(--white);
 }
 
@@ -26,6 +26,12 @@ body.dark {
     display: flex;
     align-items: center;
     gap: 5rem;
+}
+
+.logo img {
+    display: block;
+    width: 64px;
+    height: auto;
 }
 
 .theme-toggle {
@@ -95,4 +101,77 @@ span {
     font-weight: 500;
     font-size: 1rem;
     line-height: 150%;
+}
+
+body.dark .header {
+    box-sizing: border-box;
+    width: min(100% - 32px, 614px);
+    margin: 0 auto;
+    padding: 8px 0 0;
+}
+
+body.dark .logo img {
+    filter: brightness(0) invert(1);
+}
+
+body.dark .theme-toggle {
+    padding: 0;
+}
+
+body.dark .theme-toggle span {
+    color: #b7c8e9;
+    font-size: 8px;
+}
+
+body.dark .theme-toggle img {
+    display: none;
+}
+
+body.dark .theme-toggle i {
+    display: none;
+}
+
+body.dark .theme-toggle::after {
+    content: "☼";
+    color: #dce7fa;
+    font: 12px Arial, sans-serif;
+}
+
+body.dark .planet-nav {
+    box-sizing: border-box;
+    width: min(100% - 32px, 614px);
+    margin: 12px auto 20px;
+    padding: 0;
+}
+
+body.dark .search-box {
+    height: 48px;
+    background: #202e4b;
+    border-radius: 8px;
+}
+
+body.dark .search-box i {
+    padding: 0 12px;
+    color: #6da9ff;
+}
+
+body.dark .search-box input {
+    min-width: 0;
+    padding: 0;
+    background: transparent;
+    color: #f8fafc;
+    font: 11px "Space Mono", monospace;
+}
+
+body.dark .search-box input::placeholder {
+    color: #a5b1c7;
+    font-size: 10px;
+}
+
+body.dark .search-box button {
+    height: 32px;
+    margin-right: 6px;
+    padding: 0 13px;
+    border-radius: 6px;
+    font: 700 9px "Space Mono", monospace;
 }
