@@ -11,6 +11,7 @@
 | Oluwatimilehin Anthony Odusami | [Timmy-434](https://github.com/Timmy-434) |
 | Moyosoreoluwa Akinsulere | [Kasumi-chan18](https://github.com/Kasumi-chan18) |
 | Iniobong Imeobong Okposin | [Iniobongokposin39](https://github.com/Iniobongokposin39) |
+| Anthonia Nwafor | [Smile-tonia](https://github.com/Smile-tonia) |
 
 ## Components and Contributors
 | Component / Function | File(s) | Built by |
@@ -25,7 +26,7 @@
 | Data rendering | `js/render.js` | Jimoh Ayoola |
 | Footer: about section and links | `css/footer.css` | Oluwatimilehin Anthony |
 | Planet switching, loading/error states | `js/nav.js`, `css/feedback.css` | Iniobong Okposin |
-| Responsive design and mobile view | `css/responsive.css` | Smile-tonia |
+| Responsive design and mobile view | `css/responsive.css` | Anthonia Nwafor |
 | Interactive states and accessibility | `css/states.css` | Umezinwa Rita |
 | QA, light/dark audit, and polish | issues and fix PRs | Umezinwa Rita |
 
