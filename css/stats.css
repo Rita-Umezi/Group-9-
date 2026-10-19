@@ -1,0 +1,179 @@
+/* css/stats.css */
+@import url('https://googleapis.com');
+
+.planet-stats {
+  width: 100%;
+  margin-top: 24px;
+  font-family: 'Space Mono', sans-serif;
+  box-sizing: border-box;
+}
+
+/* 1. TOP GRAY ROW BOX */
+.planet-stats-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--stats-bg, #f6f8ff); 
+  border-radius: 12px;
+  padding: 16px 32px;
+  margin-bottom: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.summary-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary, #697c9a);
+}
+
+.summary-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary, #2b3442);
+}
+
+/* 2. SEMANTIC FACTS TABLE */
+.planet-facts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  box-sizing: border-box;
+}
+
+.planet-facts-table tr {
+  border-bottom: 1px solid var(--border-light, #ecf0f1);
+}
+
+.planet-facts-table th,
+.planet-facts-table td {
+  padding: 12px 8px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.planet-facts-table th {
+  font-weight: 500;
+  color: var(--text-secondary, #697c9a);
+  width: 40%;
+}
+
+.planet-facts-table td {
+  font-weight: 700;
+  color: var(--text-primary, #2b3442);
+  text-align: right; /* Aligns data right for clean tracking grid */
+}
+
+
+/* Light theme defaults */
+:root {
+  --stats-bg: #f6f8ff;
+  --text-primary: #2b3442;
+  --text-secondary: #697c9a;
+  --border-light: #ecf0f1;
+}
+
+/* Dark theme: follows the website's theme toggle */
+[data-theme="dark"] {
+  --stats-bg: #1e1e2f;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b4c0;
+  --border-light: #3a3a4d;
+}
+
+
+/* Planetary comparison table */
+
+.planet-comparison {
+    width: min(100% - 40px, 1100px);
+    margin: 32px auto;
+    color: var(--text-primary, #2b3442);
+    font-family: Arial, sans-serif;
+}
+
+.planet-comparison h2 {
+    margin-bottom: 8px;
+    color: #2d50ad;
+    font-size: 28px;
+}
+
+.comparison-description {
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+.table-caption {
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f2f6ff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px 12px;
+    border: 1px solid #ffffff;
+}
+
+.comparison-table thead th {
+    background: #2d50ad;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.comparison-table tbody th {
+    background: #d5e2fc;
+    color: #202b3d;
+    font-weight: 700;
+}
+
+.comparison-table tbody td {
+    background: #f2f6ff;
+    color: #202b3d;
+}
+
+.comparison-table tbody tr:hover td {
+    background: #e3ecff;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .planet-comparison {
+        width: calc(100% - 24px);
+        margin: 24px auto;
+    }
+
+    .planet-comparison h2 {
+        font-size: 23px;
+    }
+
+    .comparison-table {
+        min-width: 520px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 11px 8px;
+        font-size: 12px;
+    }
+}
