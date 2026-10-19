@@ -19,14 +19,10 @@
     <header class="header">
         <div class="logo">
             <img src="images/logo_black.svg" alt="Planet logo">
-            <img src="images/logo_black.svg" alt="Planet logo">
-
         </div>
 
         <button class="theme-toggle">
             <span id="theme-text">DARK</span>
-            <i class="fa-solid fa-moon"></i>
-            <img src="images/Path.svg" alt="moon logo">
             <img src="images/Path.svg" alt="moon logo">
         </button>
 
@@ -35,7 +31,7 @@
     <nav class="planet-nav">
 
         <div class="search-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
 
             <input type="search" id="search" name="search" placeholder="Search planet name" list="planet-options" autocomplete="off" aria-label="Search for a planet">
             <datalist id="planet-options"></datalist>
@@ -99,92 +95,6 @@
             </section>
         </section>
 
-        <section class="planet-comparison" aria-labelledby="comparison-title">
-            <h2 id="comparison-title">Planetary Facts at a Glance</h2>
-
-            <p class="comparison-description">
-                Below is a comparative table of major planets in our solar system.
-                The data highlights key physical properties used by astronomers
-                and researchers worldwide.
-            </p>
-
-            <p class="table-caption">
-                Data about the planets of our solar system
-                (planetary facts based on NASA data)
-            </p>
-
-            <div class="table-wrapper">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th colspan="2" scope="colgroup"></th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Mass (10²⁴ kg)</th>
-                            <th scope="col">Diameter (km)</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <th rowspan="4" colspan="2" scope="rowgroup">
-                                Terrestrial<br>Planets
-                            </th>
-                            <td>Mercury</td>
-                            <td>0.330</td>
-                            <td>4,879</td>
-                        </tr>
-                        <tr>
-                            <td>Venus</td>
-                            <td>4.87</td>
-                            <td>12,104</td>
-                        </tr>
-                        <tr>
-                            <td>Earth</td>
-                            <td>5.97</td>
-                            <td>12,756</td>
-                        </tr>
-                        <tr>
-                            <td>Mars</td>
-                            <td>0.642</td>
-                            <td>6,792</td>
-                        </tr>
-
-                        <tr>
-                            <th rowspan="4" scope="rowgroup">
-                                Jovian<br>Planets
-                            </th>
-                            <th rowspan="2" scope="rowgroup">Gas Giants</th>
-                            <td>Jupiter</td>
-                            <td>1,898</td>
-                            <td>142,984</td>
-                        </tr>
-                        <tr>
-                            <td>Saturn</td>
-                            <td>568</td>
-                            <td>120,536</td>
-                        </tr>
-                        <tr>
-                            <th rowspan="2" scope="rowgroup">Ice Giants</th>
-                            <td>Uranus</td>
-                            <td>86.8</td>
-                            <td>51,118</td>
-                        </tr>
-                        <tr>
-                            <td>Neptune</td>
-                            <td>102</td>
-                            <td>49,528</td>
-                        </tr>
-
-                        <tr>
-                            <th colspan="2" scope="rowgroup">Dwarf Planets</th>
-                            <td>Pluto</td>
-                            <td>0.0130</td>
-                            <td>2,377</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
     </main>
 
     <section class="planet-facts" aria-labelledby="planet-facts-title">

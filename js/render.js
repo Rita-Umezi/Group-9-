@@ -6,9 +6,11 @@ function renderPlanet(planet) {
   const name = document.querySelector(".planet-info h1");
   const description = document.querySelector(".planet-info p:last-of-type");
   const type = document.querySelector(".planet-info p:first-of-type");
-  const stats = document.querySelectorAll(".planet-stats td");
+  const gravity = document.querySelector("#planet-gravity");
+  const mass = document.querySelector("#planet-mass");
+  const period = document.querySelector("#planet-period");
 
-  if (!card || !image || !name || !type || !description || stats.length < 3) return;
+  if (!card || !image || !name || !type || !description || !gravity || !mass || !period) return;
 
   name.textContent = planet.name;
   type.textContent = planet.type;
@@ -21,15 +23,15 @@ function renderPlanet(planet) {
     image.hidden = true;
   };
 
-  stats[0].textContent = `${planet.gravity} m/s²`;
-  stats[1].textContent = planet.mass;
-  stats[2].textContent = `${planet.period} days`;
+  gravity.textContent = planet.gravity;
+  mass.textContent = planet.mass;
+  period.textContent = planet.period;
 
   const detailValues = {
-    temperature: `${planet.temperature} K`,
+    temperature: planet.temperature,
     moons: planet.moons,
-    diameter: `${Number(planet.diameter).toLocaleString()} km`,
-    distance: `${planet.distanceFromSun.toLocaleString()} million km`
+    diameter: Number(planet.diameter).toLocaleString(),
+    distance: planet.distanceFromSun.toLocaleString()
   };
 
   document.querySelectorAll(".planet-detail[data-detail]").forEach((detail) => {
