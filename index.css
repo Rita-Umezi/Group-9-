@@ -4,6 +4,7 @@
   height: 70px;
   border-radius: 50%;
 }
+
 .hero-card{
   background: white;
   border-radius: 12px;
@@ -12,55 +13,56 @@
   max-width: 400px;
   margin: 30px auto;
 }
+
 .planet-info{
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 .planet-stats{
   background: #f4f7fc;
   border-radius: 8px;
   padding: 12px;
   margin-top: 20px;
 }
-.planet-stats table{
-  width: 100%;
-}
-.planet-stats th,
-.planet-stats td{
-  text-align: center;
-}
-.planet-details{
+
+.planet-details {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px 30px;
-  margin-top: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: left;
+  align-items: left;
+  gap: 20px 36px;
+  margin: 20px auto 0;
+  padding: 12px 20px;
 }
-.planet-details img{
+
+.planet-details img {
+  display: block;
+  width: 48px;
+  height: 48px;
   max-width: 100%;
+  object-fit: contain;
 }
+
+
 .planet-info h1{
   font-size: 24px;
   margin: 0 0 8px;
 }
+
 .planet-info p:first-of-type{
   color:#3b82f6;
   font-size:12px;
   margin:0 0 15px;
 }
+
 .planet-info p:last-of-type{
   font-size: 12px;
   line-height: 1.5;
   margin: 0;
 }
-.planet-stats th{
-  font-size: 14px;
-  font-weight: normal;
-}
-.planet-stats td{
-  font-size: 14px;
-  font-weight: bold;
-}
+
 .planet-stats{
   margin-top: 20px;
   margin-bottom: 15px;
