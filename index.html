@@ -19,12 +19,14 @@
     <header class="header">
         <div class="logo">
             <img src="images/logo_black.svg" alt="Planet logo">
+            <img src="images/logo_black.svg" alt="Planet logo">
 
         </div>
 
         <button class="theme-toggle">
             <span id="theme-text">DARK</span>
             <i class="fa-solid fa-moon"></i>
+            <img src="images/Path.svg" alt="moon logo">
             <img src="images/Path.svg" alt="moon logo">
         </button>
 
@@ -78,12 +80,22 @@
             </section>
 
             <section class="planet-details">
-                <div>
-                    <img src="img/Temperature.png" alt="">
+                <div class="planet-detail" data-detail="temperature" aria-label="Temperature">
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 9.5V3.25a2 2 0 1 1 4 0V9.5a4 4 0 1 1-4 0Z"/><path d="M8 5v6"/></svg>
+                    <span class="sr-only">Temperature:</span><span class="planet-detail-value">288 K</span>
                 </div>
-                <div><img src="img/Half moon.png" alt=""></div>
-                <div><img src="img/Diameter info.png" alt=""></div>
-                <div><img src="img/Company.png" alt=""></div>
+                <div class="planet-detail" data-detail="moons" aria-label="Moons">
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 10.2A6.2 6.2 0 0 1 5.8 2.5 6.5 6.5 0 1 0 13.5 10.2Z"/></svg>
+                    <span class="sr-only">Moons:</span><span class="planet-detail-value">1</span>
+                </div>
+                <div class="planet-detail" data-detail="diameter" aria-label="Diameter">
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6"/></svg>
+                    <span class="sr-only">Diameter:</span><span class="planet-detail-value">12,756 km</span>
+                </div>
+                <div class="planet-detail" data-detail="distance" aria-label="Distance from Sun">
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m8 1.5 1.2 1.3 1.8-.2.7 1.7 1.7.7-.2 1.8L14.5 8l-1.3 1.2.2 1.8-1.7.7-.7 1.7-1.8-.2L8 14.5l-1.2-1.3-1.8.2-.7-1.7-1.7-.7.2-1.8L1.5 8l1.3-1.2-.2-1.8 1.7-.7.7-1.7 1.8.2L8 1.5Z"/><circle cx="8" cy="8" r="2.2"/></svg>
+                    <span class="sr-only">Distance from Sun:</span><span class="planet-detail-value">149.6 million km</span>
+                </div>
             </section>
         </section>
 
